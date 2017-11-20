@@ -14,3 +14,20 @@ A few features
 TODOs
 - Use DNNs for licence plate localization
 - Write sequence id format for the UDP server for the case packets arrive out of order, those frames are dropped now
+
+# Usage
+If you use 64-bit windows you can use the precompiled binary, if not you'll have to compile manually.
+Dependencies are:
+- C++17 capable compiler
+- OpenCV >3.3.x (or earlier version, with a manually linked opencv-DNN module, from opencv-contrib)
+- SFML >2.x
+
+Just run the executable, and supply data through udp.
+Examples how to do this can be found [here](https://github.com/srslynow/ANPR-Server-Python).
+See the files:
+- socket_send_udp.py
+- socket_send_udp_video.py
+
+General UDP structure uses the format:
+- Initial packet is 4 bytes (int) indicating frame data size, endian format is dependend on ANPR-Server host. Most systems use Little-endian, as does mine.
+- Following packets contain JPG-encoded frame data, keep packet size <1500 bytes to prevent fragmentation
