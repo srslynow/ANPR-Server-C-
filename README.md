@@ -31,3 +31,9 @@ See the files:
 General UDP structure uses the format:
 - Initial packet is 4 bytes (int) indicating frame data size, endian format is dependend on ANPR-Server host. Most systems use Little-endian, as does mine.
 - Following packets contain JPG-encoded frame data, keep packet size <1500 bytes to prevent fragmentation
+- Repeat for more frames.. :)
+
+The server keeps track of ip & port of the data-sending client, it assumes non-concurrent data sending.
+You have a few options to use multiple cameras:
+- Interleave the frames from different cameras
+- Set up different socket for the different senders, this will give the new client a different sending port, thus enabling the server to differentiate between clients.
