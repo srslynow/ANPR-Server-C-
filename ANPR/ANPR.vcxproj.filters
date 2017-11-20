@@ -1,0 +1,111 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Source Files\LPDetection">
+      <UniqueIdentifier>{fb1855c7-6e64-4236-a1e9-980352efbd15}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\LPDetection">
+      <UniqueIdentifier>{c9c0e70a-31bc-4852-94c0-955d15006c0a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Tools">
+      <UniqueIdentifier>{26a7ad5e-af0d-4351-9abc-eece79dbed86}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Tools">
+      <UniqueIdentifier>{6093a721-583d-4cf3-aa47-3bbb51196ed4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\UDPServer">
+      <UniqueIdentifier>{8ee6db1a-f068-4ff5-8f75-a20e7987f036}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\UDPServer">
+      <UniqueIdentifier>{3fd56a7b-deae-4966-8619-04f3af20504a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Buffer">
+      <UniqueIdentifier>{57975806-1666-416a-9f2a-7fa156690c6d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Buffer">
+      <UniqueIdentifier>{3d1ea62c-85a0-4183-be43-4a634212eb14}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Model.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Controller.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="View.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="VariableManager.cpp">
+      <Filter>Source Files\Tools</Filter>
+    </ClCompile>
+    <ClCompile Include="signal.cpp">
+      <Filter>Source Files\Tools</Filter>
+    </ClCompile>
+    <ClCompile Include="Server.cpp">
+      <Filter>Source Files\UDPServer</Filter>
+    </ClCompile>
+    <ClCompile Include="LPDetection.cpp">
+      <Filter>Source Files\LPDetection</Filter>
+    </ClCompile>
+    <ClCompile Include="LPCascade.cpp">
+      <Filter>Source Files\LPDetection</Filter>
+    </ClCompile>
+    <ClCompile Include="ProcessingThread.cpp">
+      <Filter>Source Files\Tools</Filter>
+    </ClCompile>
+    <ClCompile Include="ImageBuffer.cpp">
+      <Filter>Source Files\Buffer</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Model.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Controller.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="View.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="signal.h">
+      <Filter>Header Files\Tools</Filter>
+    </ClInclude>
+    <ClInclude Include="VariableManager.h">
+      <Filter>Header Files\Tools</Filter>
+    </ClInclude>
+    <ClInclude Include="Server.h">
+      <Filter>Header Files\UDPServer</Filter>
+    </ClInclude>
+    <ClInclude Include="LPDetection.h">
+      <Filter>Header Files\LPDetection</Filter>
+    </ClInclude>
+    <ClInclude Include="LPCascade.h">
+      <Filter>Header Files\LPDetection</Filter>
+    </ClInclude>
+    <ClInclude Include="ProcessingThread.h">
+      <Filter>Header Files\Tools</Filter>
+    </ClInclude>
+    <ClInclude Include="Semaphore.h">
+      <Filter>Header Files\Tools</Filter>
+    </ClInclude>
+    <ClInclude Include="ImageBuffer.h">
+      <Filter>Header Files\Buffer</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

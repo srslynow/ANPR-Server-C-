@@ -1,0 +1,9 @@
+%YAML:1.0
+---
+debugMode: 0
+plateW: 512
+plateH: 112
+charW: 28
+charH: 28
+charB: 6
+useGPU: 1
