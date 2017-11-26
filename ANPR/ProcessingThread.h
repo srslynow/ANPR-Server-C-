@@ -49,7 +49,7 @@ private:
 	template<typename T>
 	T imgToFixedSize(T img);
 
-	static std::vector<std::string> readClassNames(const char * filename);
+	static std::vector<char> readClassNames(const char * filename);
 
 	static void createFeedBackImage(std::shared_ptr<Flash> flash);
 
@@ -61,6 +61,6 @@ private:
 	std::shared_ptr<ImageBuffer> _buf;
 	cv::CascadeClassifier cascadeClassifier;
 	cv::dnn::Net characterClassifier;
-	std::vector<std::string> _classlabels;
+	std::vector<char> _classlabels;
 };
 

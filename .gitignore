@@ -13,6 +13,8 @@
 *.userprefs
 
 # Build results
+build
+cmake_modules
 ANPR/[Dd]ebug/
 [Dd]ebugPublic/
 ANPR/[Rr]elease/

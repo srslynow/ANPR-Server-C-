@@ -1,6 +1,6 @@
 %YAML:1.0
 ---
-debugMode: 0
+debugMode: 1
 plateW: 512
 plateH: 112
 charW: 28

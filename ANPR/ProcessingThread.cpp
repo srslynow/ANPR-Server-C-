@@ -122,7 +122,7 @@ void ProcessingThread::run()
 					auto max_elem_ptr = std::max_element(predData.begin(), predData.end());
 					auto classIdx = std::distance(predData.begin(), max_elem_ptr);
 					auto prob = predData[classIdx];
-					plateStr.append(_classlabels.at(classIdx));
+					plateStr += _classlabels.at(classIdx);
 				}
 				plate->plateStr = plateStr;
 				flash->plates.push_back(plate);
@@ -130,7 +130,7 @@ void ProcessingThread::run()
 				
 				clock_t endPredict = std::clock();
 				_logger->debug("Predicted characters in {} sec", double(endPredict - beginPredict) / CLOCKS_PER_SEC);
-				_logger->info("Predicted licence plate \"{}\" in a total of {} sec", plateStr, double(endPredict - beginFind) / CLOCKS_PER_SEC);
+				_logger->info("Predicted licence plate {} in a total of {} sec", plateStr, double(endPredict - beginFind) / CLOCKS_PER_SEC);
 			}
 
 			createFeedBackImage(flash);
@@ -215,9 +215,9 @@ T ProcessingThread::imgToFixedSize(T img)
 	return img;
 }
 
-std::vector<std::string> ProcessingThread::readClassNames(const char *filename = "labels.txt")
+std::vector<char> ProcessingThread::readClassNames(const char *filename = "labels.txt")
 {
-	std::vector<std::string> classNames;
+	std::vector<char> classNames;
 
 	std::ifstream fp(filename);
 	if (fp.is_open())
@@ -227,7 +227,7 @@ std::vector<std::string> ProcessingThread::readClassNames(const char *filename =
 		{
 			std::getline(fp, name);
 			if (name.length())
-				classNames.push_back(name.substr(name.find(' ') + 1));
+				classNames.push_back(name[0]);
 		}
 
 		fp.close();

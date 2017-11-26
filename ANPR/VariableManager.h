@@ -11,13 +11,12 @@ public:
 	}
 
 	void setDebugMode(bool mode);
+	bool getDebugMode();
 
 	void setPlateSize(int width, int height);
-
 	cv::Size getPlateSize();
 
 	void setCharSize(int width, int height);
-
 	cv::Size getCharSize();
 
 	bool useGPU() { return _useGPU; }

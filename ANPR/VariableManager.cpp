@@ -40,6 +40,11 @@ void VariableManager::setDebugMode(bool mode)
 	this->write();
 }
 
+bool VariableManager::getDebugMode()
+{
+	return this->debugMode;
+}
+
 void VariableManager::setPlateSize(int width, int height)
 {
 	plateW = width;
