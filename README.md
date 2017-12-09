@@ -37,3 +37,5 @@ The server keeps track of ip & port of the data-sending client, it assumes non-c
 You have a few options to use multiple cameras:
 - Interleave the frames from different cameras
 - Set up different socket for the different senders, this will give the new client a different sending port, thus enabling the server to differentiate between clients.
+
+![alt text](./ANPR_example_case.png "ANPR C++ Server running in Ubuntu")
